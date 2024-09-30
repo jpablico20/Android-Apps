@@ -15,63 +15,73 @@
         android:orientation="vertical">
         
         <Button
+            android:id="@+id/btn_displayhelloworld"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Display Hello World"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_showhellobutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Show Hello Button"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_displayname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Display Name"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_counter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Counter +"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_simpleform"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Simple Form"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_user_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="User Age"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_user_greeting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="User Greeting"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_calculator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Calculator"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_text_length"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Text Length"
             android:textSize="20sp"/>
 
         <Button
+            android:id="@+id/btn_currency_converter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Currency Converter"
             android:textSize="20sp"/>
 
         
