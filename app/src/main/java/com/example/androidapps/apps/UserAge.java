@@ -1,26 +1,41 @@
 package com.example.androidapps.apps;
 
-import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.androidapps.R;
 
+import java.time.LocalDate;
+
 public class UserAge extends AppCompatActivity {
+
+    EditText enterBirthYear;
+    Button btnSubmitBirthYear;
+    TextView showAge;
+    int getBirthYear, currentYear, totalAge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_user_age);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        enterBirthYear = findViewById(R.id.enter_birth_year);
+        btnSubmitBirthYear = findViewById(R.id.btn_submit_birth_year);
+        showAge = findViewById(R.id.show_age);
+
+        btnSubmitBirthYear.setOnClickListener(v -> {
+            getBirthYear = Integer.parseInt(enterBirthYear.getText().toString());
+            currentYear = LocalDate.now().getYear();
+
+            totalAge = currentYear - getBirthYear;
+
+            showAge.setText("Your age is: " + totalAge);
         });
     }
 }
