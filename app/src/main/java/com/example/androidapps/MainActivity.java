@@ -24,7 +24,8 @@ import com.example.androidapps.apps.UserGreeting;
 public class MainActivity extends AppCompatActivity {
 
     Button btnDisplayHelloWorld, btnshowHelloButton, btnDisplayname, btnCounter,
-    btnSimpleForm, btnUserAge, btnUserGreeting, btnCalculator, btnTextLength, btnCurrencyConverter;
+    btnSimpleForm, btnUserAge, btnUserGreeting, btnCalculator, btnTextLength, btnCurrencyConverter,
+    btnEvenOddChecker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
