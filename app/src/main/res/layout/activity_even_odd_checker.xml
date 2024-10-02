@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".apps.EvenOddChecker">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="22dp">
+
+        <EditText
+            android:id="@+id/enter_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a number"
+            android:padding="5dp"
+            android:background="@color/cardview_shadow_start_color"/>
+
+        <Button
+            android:id="@+id/btn_check_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECK"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/result_even_odd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_marginTop="22dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
