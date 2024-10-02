@@ -1,126 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
     tools:context=".MainActivity">
-    
-    
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        
-        <Button
-            android:id="@+id/btn_displayhelloworld"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Display Hello World"
-            android:textSize="20sp"/>
+            android:orientation="vertical"
+            android:layout_margin="20dp">
 
-        <Button
-            android:id="@+id/btn_showhellobutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Show Hello Button"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_displayhelloworld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Display Hello World"
+                android:textSize="20sp"/>
 
-        <Button
-            android:id="@+id/btn_displayname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Display Name"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_showhellobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Hello Button"
+                android:textSize="20sp"/>
 
-        <Button
-            android:id="@+id/btn_counter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Counter +"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_displayname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Display Name"
+                android:textSize="20sp"/>
 
-        <Button
-            android:id="@+id/btn_simpleform"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Simple Form"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Counter +"
+                android:textSize="20sp"/>
 
-        <Button
-            android:id="@+id/btn_user_age"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="User Age"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_simpleform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simple Form"
+                android:textSize="20sp"/>
 
-        <Button
-            android:id="@+id/btn_user_greeting"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="User Greeting"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_currency_converter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Currency Converter"
+                android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/btn_calculator"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Calculator"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_user_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Age"
+                android:textSize="20sp"/>
 
-        <Button
-            android:id="@+id/btn_text_length"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Text Length"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_user_greeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Greeting"
+                android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/btn_currency_converter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Currency Converter"
-            android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btn_calculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculator"
+                android:textSize="20sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Button"/>
+            <Button
+                android:id="@+id/btn_text_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text Length"
+                android:textSize="20sp"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Button"/>
+            <Button
+                android:id="@+id/btn_even_odd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Even Odd Checker"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Button"/>
+            <Button
+                android:id="@+id/btn_word_reverser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Word Reverser"
+                android:textSize="20sp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Button"/>
+            <Button
+                android:id="@+id/btn_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Show Username"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Button"/>
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Show Date"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Button"/>
+            <Button
+                android:id="@+id/btn_multiplication_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Multplication Table"/>
 
-        
-    </LinearLayout>
+            <Button
+                android:id="@+id/btn_simple_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simple Form"
+                android:textSize="20sp" />
 
-</RelativeLayout>
+            <Button
+                android:id="@+id/btn_fahrenheit_celsius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Fahrenheit to Celsius"/>
+
+            <Button
+                android:id="@+id/btn_bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Bookmark List"/>
+
+            <Button
+                android:id="@+id/btn_character_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Character Counter"/>
+
+            <Button
+                android:id="@+id/btn_palindrome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Palindrome Checker"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Button"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Button"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
