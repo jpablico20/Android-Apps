@@ -13,6 +13,36 @@
         android:theme="@style/Theme.AndroidApps"
         tools:targetApi="31">
         <activity
+            android:name=".apps.WordShuffler"
+            android:exported="false" />
+        <activity
+            android:name=".apps.UppercaseConverter"
+            android:exported="false" />
+        <activity
+            android:name=".apps.MultipleChecker"
+            android:exported="false" />
+        <activity
+            android:name=".apps.RandomNumberGenerator"
+            android:exported="false" />
+        <activity
+            android:name=".apps.WordCounter"
+            android:exported="false" />
+        <activity
+            android:name=".apps.GuessNumber"
+            android:exported="false" />
+        <activity
+            android:name=".apps.TodoManager"
+            android:exported="false" />
+        <activity
+            android:name=".apps.FactorialCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".apps.ShoppingList"
+            android:exported="false" />
+        <activity
+            android:name=".apps.TemperatureConverter"
+            android:exported="false" />
+        <activity
             android:name=".apps.PalindromeChecker"
             android:exported="false" />
         <activity
