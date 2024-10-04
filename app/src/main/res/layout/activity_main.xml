@@ -158,6 +158,76 @@
                 android:text="Palindrome Checker"/>
 
             <Button
+                android:id="@+id/btn_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Temperature Checker"/>
+
+            <Button
+                android:id="@+id/btn_shopping_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Shopping List"/>
+
+            <Button
+                android:id="@+id/btn_factorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Factorial Calculator"/>
+
+            <Button
+                android:id="@+id/btn_todo_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Todo Manager"/>
+
+            <Button
+                android:id="@+id/btn_guess_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Guess Number Game"/>
+
+            <Button
+                android:id="@+id/btn_word_counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Word Counter"/>
+
+            <Button
+                android:id="@+id/btn_random_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Random Number Generator"/>
+
+            <Button
+                android:id="@+id/btn_multiple_checker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Multiple Checker"/>
+
+            <Button
+                android:id="@+id/btn_uppercase_converter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Uppercase Converter"/>
+
+            <Button
+                android:id="@+id/btn_shuffle_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Word Shuffler"/>
+
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -168,6 +238,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:text="Button"/>
+
+
 
 
 
