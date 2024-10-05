@@ -10,33 +10,43 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.androidapps.apps.BmiSolver;
 import com.example.androidapps.apps.BookmarkList;
 import com.example.androidapps.apps.Calculator;
 import com.example.androidapps.apps.CharacterCounter;
+import com.example.androidapps.apps.CompoundInterest;
 import com.example.androidapps.apps.Counter;
 import com.example.androidapps.apps.CurrencyConverter;
+import com.example.androidapps.apps.CurrencyFormatter;
 import com.example.androidapps.apps.DisplayHelloWorld;
 import com.example.androidapps.apps.DisplayName;
+import com.example.androidapps.apps.DivisibleChecker;
 import com.example.androidapps.apps.EvenOddChecker;
 import com.example.androidapps.apps.FactorialCalculator;
 import com.example.androidapps.apps.FahrenheitToCelsius;
+import com.example.androidapps.apps.FibonacciGenerator;
 import com.example.androidapps.apps.GuessNumber;
 import com.example.androidapps.apps.MultipleChecker;
 import com.example.androidapps.apps.MultiplicationTable;
+import com.example.androidapps.apps.OddSumCalculator;
 import com.example.androidapps.apps.PalindromeChecker;
 import com.example.androidapps.apps.RandomNumberGenerator;
+import com.example.androidapps.apps.RandomQouteDisplay;
 import com.example.androidapps.apps.ShoppingList;
 import com.example.androidapps.apps.ShowDate;
 import com.example.androidapps.apps.ShowHelloButton;
 import com.example.androidapps.apps.ShowUserName;
 import com.example.androidapps.apps.SimpleForm;
+import com.example.androidapps.apps.SimpleInterest;
 import com.example.androidapps.apps.SimpleLogin;
 import com.example.androidapps.apps.TemperatureConverter;
 import com.example.androidapps.apps.TextLength;
 import com.example.androidapps.apps.TodoManager;
 import com.example.androidapps.apps.UppercaseConverter;
+import com.example.androidapps.apps.UppercaseGreeting;
 import com.example.androidapps.apps.UserAge;
 import com.example.androidapps.apps.UserGreeting;
+import com.example.androidapps.apps.UsernameValidator;
 import com.example.androidapps.apps.WordCounter;
 import com.example.androidapps.apps.WordReverser;
 import com.example.androidapps.apps.WordShuffler;
@@ -48,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
     btnEvenOddChecker, btnWordReverser, btnShowUsername, btnShowDate, btnMultiplicationTable,
     btnSimpleLogin, btnFahrenheitToCelsius, btnBookmark, btnCharacterCounter, btnPalindrome,
     btnTemperature, btnShoppingList, btnFactorial, btnTodoManager, btnGuessNumber, btnWordCounter,
-    btnRandomNum, btnMultipleChecker, btnUppercase, btnWordShuffler;
+    btnRandomNum, btnMultipleChecker, btnUppercase, btnWordShuffler, btnBmiSolver, btnUsernameValidator,
+    btnSimpleInterest, btnCompoundInterest, btnFibonacciGenerator, btnOddSum, btnCurrencyFormatter,
+    btnRandomQouteDisplay, btnUppercaseGreeting, btnDivisible;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +97,16 @@ public class MainActivity extends AppCompatActivity {
         btnMultipleChecker = findViewById(R.id.btn_multiple_checker);
         btnUppercase = findViewById(R.id.btn_uppercase_converter);
         btnWordShuffler = findViewById(R.id.btn_shuffle_word);
-
+        btnBmiSolver = findViewById(R.id.btn_bmi_solver);
+        btnUsernameValidator = findViewById(R.id.btn_username_valid);
+        btnSimpleInterest = findViewById(R.id.btn_simple_interest);
+        btnCompoundInterest = findViewById(R.id.btn_compound_interest);
+        btnFibonacciGenerator = findViewById(R.id.btn_fibo_generator);
+        btnOddSum = findViewById(R.id.btn_odd_sum);
+        btnCurrencyFormatter = findViewById(R.id.btn_currency_formatter);
+        btnRandomQouteDisplay = findViewById(R.id.btn_random_qoute);
+        btnUppercaseGreeting = findViewById(R.id.btn_upper_greeting);
+        btnDivisible = findViewById(R.id.btn_check_divisible);
 
         btnDisplayHelloWorld.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, DisplayHelloWorld.class);
@@ -237,6 +258,54 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        btnBmiSolver.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, BmiSolver.class);
+            startActivity(intent);
+        });
 
+        btnUsernameValidator.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, UsernameValidator.class);
+            startActivity(intent);
+        });
+
+        btnSimpleInterest.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SimpleInterest.class);
+            startActivity(intent);
+        });
+
+        btnCompoundInterest.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CompoundInterest.class);
+            startActivity(intent);
+        });
+
+        btnFibonacciGenerator.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FibonacciGenerator.class);
+            startActivity(intent);
+        });
+
+        btnOddSum.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, OddSumCalculator.class);
+            startActivity(intent);
+        });
+
+        btnCurrencyFormatter.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CurrencyFormatter.class);
+            startActivity(intent);
+        });
+
+        btnRandomQouteDisplay.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RandomQouteDisplay.class);
+            startActivity(intent);
+        });
+
+        btnUppercaseGreeting.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, UppercaseGreeting.class);
+            startActivity(intent);
+        });
+
+        btnDivisible.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, DivisibleChecker.class);
+            startActivity(intent);
+        });
     }
 }

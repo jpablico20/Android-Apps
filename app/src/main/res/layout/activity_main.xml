@@ -228,6 +228,70 @@
                 android:text="Word Shuffler"/>
 
             <Button
+                android:id="@+id/btn_bmi_solver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="BMI solver"/>
+
+            <Button
+                android:id="@+id/btn_username_valid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Username Validator"/>
+
+            <Button
+                android:id="@+id/btn_simple_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Simple Interest Calculator"/>
+
+            <Button
+                android:id="@+id/btn_compound_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Compound Interest Calculator"/>
+
+            <Button
+                android:id="@+id/btn_fibo_generator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Fibonacci Generator"/>
+
+            <Button
+                android:id="@+id/btn_odd_sum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Odd Sum Calculator"/>
+
+            <Button
+                android:id="@+id/btn_currency_formatter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Currency Formatter"/>
+
+            <Button
+                android:id="@+id/btn_random_qoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Random Qoute Display"/>
+
+            <Button
+                android:id="@+id/btn_upper_greeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Uppercase Greeting"/>
+
+            <Button
+                android:id="@+id/btn_check_divisible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -238,8 +302,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:text="Button"/>
-
-
 
 
 
