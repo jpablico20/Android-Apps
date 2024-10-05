@@ -13,6 +13,36 @@
         android:theme="@style/Theme.AndroidApps"
         tools:targetApi="31">
         <activity
+            android:name=".apps.DivisibleChecker"
+            android:exported="false" />
+        <activity
+            android:name=".apps.UppercaseGreeting"
+            android:exported="false" />
+        <activity
+            android:name=".apps.RandomQouteDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".apps.CurrencyFormatter"
+            android:exported="false" />
+        <activity
+            android:name=".apps.OddSumCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".apps.FibonacciGenerator"
+            android:exported="false" />
+        <activity
+            android:name=".apps.CompoundInterest"
+            android:exported="false" />
+        <activity
+            android:name=".apps.SimpleInterest"
+            android:exported="false" />
+        <activity
+            android:name=".apps.UsernameValidator"
+            android:exported="false" />
+        <activity
+            android:name=".apps.BmiSolver"
+            android:exported="false" />
+        <activity
             android:name=".apps.WordShuffler"
             android:exported="false" />
         <activity
