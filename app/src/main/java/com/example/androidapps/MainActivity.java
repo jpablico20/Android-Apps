@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        btnSimpleForm.setOnClickListener(v -> {
+        btnSimpleLogin.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SimpleLogin.class);
             startActivity(intent);
         });
