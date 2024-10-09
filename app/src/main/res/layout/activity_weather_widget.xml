@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Widget"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter City Name" />
+
+    <Button
+        android:id="@+id/btnGetWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Weather" />
+
+    <TextView
+        android:id="@+id/tvWeatherInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Weather Info"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: --" />
+
+    <TextView
+        android:id="@+id/tvCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condition: --" />
+
+</LinearLayout>
