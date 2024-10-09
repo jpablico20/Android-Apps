@@ -34,6 +34,8 @@ public class GuessNumber extends AppCompatActivity {
 
         random = new Random();
 
+        generatedNewRandomNumber();
+
         btnCheckGuess.setOnClickListener(v -> {
             int getNum = Integer.parseInt(inputGuess.getText().toString());
 
