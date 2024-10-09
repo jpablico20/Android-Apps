@@ -295,15 +295,77 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="Button"/>
+                android:text="Divisible Checker"/>
 
             <Button
+                android:id="@+id/btn_generate_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="Button"/>
+                android:text="Generate Random Color"/>
 
+            <Button
+                android:id="@+id/btn_new_qoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Qoute of the Day"/>
 
+            <Button
+                android:id="@+id/btn_image_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Image Carousel"/>
+
+            <Button
+                android:id="@+id/btn_stopwatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Stopwatch"/>
+
+            <Button
+                android:id="@+id/btn_password_checker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Password Strength Checker"/>
+
+            <Button
+                android:id="@+id/btn_quiz_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Quiz Game"/>
+
+            <Button
+                android:id="@+id/btn_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Timer"/>
+
+            <Button
+                android:id="@+id/btn_color_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Color Picker"/>
+
+            <Button
+                android:id="@+id/btn_weather_widget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Weather Widget"/>
+
+            <Button
+                android:id="@+id/btn_mood_tracker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Mood Tracker"/>
 
         </LinearLayout>
 

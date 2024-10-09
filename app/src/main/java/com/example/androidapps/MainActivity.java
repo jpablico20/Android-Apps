@@ -4,16 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 import com.example.androidapps.apps.BmiSolver;
 import com.example.androidapps.apps.BookmarkList;
 import com.example.androidapps.apps.Calculator;
 import com.example.androidapps.apps.CharacterCounter;
+import com.example.androidapps.apps.ColorPicker;
 import com.example.androidapps.apps.CompoundInterest;
 import com.example.androidapps.apps.Counter;
 import com.example.androidapps.apps.CurrencyConverter;
@@ -25,11 +24,17 @@ import com.example.androidapps.apps.EvenOddChecker;
 import com.example.androidapps.apps.FactorialCalculator;
 import com.example.androidapps.apps.FahrenheitToCelsius;
 import com.example.androidapps.apps.FibonacciGenerator;
+import com.example.androidapps.apps.GenerateRandomColor;
 import com.example.androidapps.apps.GuessNumber;
+import com.example.androidapps.apps.ImageCarousel;
+import com.example.androidapps.apps.MoodTracker;
 import com.example.androidapps.apps.MultipleChecker;
 import com.example.androidapps.apps.MultiplicationTable;
 import com.example.androidapps.apps.OddSumCalculator;
 import com.example.androidapps.apps.PalindromeChecker;
+import com.example.androidapps.apps.PasswordStrengthChecker;
+import com.example.androidapps.apps.QouteOfTheDay;
+import com.example.androidapps.apps.QuizGame;
 import com.example.androidapps.apps.RandomNumberGenerator;
 import com.example.androidapps.apps.RandomQouteDisplay;
 import com.example.androidapps.apps.ShoppingList;
@@ -39,14 +44,17 @@ import com.example.androidapps.apps.ShowUserName;
 import com.example.androidapps.apps.SimpleForm;
 import com.example.androidapps.apps.SimpleInterest;
 import com.example.androidapps.apps.SimpleLogin;
+import com.example.androidapps.apps.Stopwatch;
 import com.example.androidapps.apps.TemperatureConverter;
 import com.example.androidapps.apps.TextLength;
+import com.example.androidapps.apps.Timer;
 import com.example.androidapps.apps.TodoManager;
 import com.example.androidapps.apps.UppercaseConverter;
 import com.example.androidapps.apps.UppercaseGreeting;
 import com.example.androidapps.apps.UserAge;
 import com.example.androidapps.apps.UserGreeting;
 import com.example.androidapps.apps.UsernameValidator;
+import com.example.androidapps.apps.WeatherWidget;
 import com.example.androidapps.apps.WordCounter;
 import com.example.androidapps.apps.WordReverser;
 import com.example.androidapps.apps.WordShuffler;
@@ -60,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
     btnTemperature, btnShoppingList, btnFactorial, btnTodoManager, btnGuessNumber, btnWordCounter,
     btnRandomNum, btnMultipleChecker, btnUppercase, btnWordShuffler, btnBmiSolver, btnUsernameValidator,
     btnSimpleInterest, btnCompoundInterest, btnFibonacciGenerator, btnOddSum, btnCurrencyFormatter,
-    btnRandomQouteDisplay, btnUppercaseGreeting, btnDivisible;
+    btnRandomQouteDisplay, btnUppercaseGreeting, btnDivisible, btnRandomColor, btnNewQoute, btnImageCarousel,
+    btnStopwatch, btnPasswordChecker, btnQuizGame, btnTimer, btnColorPicker, btnWeatherWidget, btnMoodTracker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +116,16 @@ public class MainActivity extends AppCompatActivity {
         btnRandomQouteDisplay = findViewById(R.id.btn_random_qoute);
         btnUppercaseGreeting = findViewById(R.id.btn_upper_greeting);
         btnDivisible = findViewById(R.id.btn_check_divisible);
+        btnRandomColor = findViewById(R.id.btn_generate_color);
+        btnNewQoute = findViewById(R.id.btn_new_qoute);
+        btnImageCarousel = findViewById(R.id.btn_image_carousel);
+        btnStopwatch = findViewById(R.id.btn_stopwatch);
+        btnPasswordChecker = findViewById(R.id.btn_password_checker);
+        btnQuizGame = findViewById(R.id.btn_quiz_game);
+        btnTimer = findViewById(R.id.btn_timer);
+        btnColorPicker =  findViewById(R.id.btn_color_picker);
+        btnWeatherWidget =  findViewById(R.id.btn_weather_widget);
+        btnMoodTracker = findViewById(R.id.btn_mood_tracker);
 
         btnDisplayHelloWorld.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, DisplayHelloWorld.class);
@@ -305,6 +324,56 @@ public class MainActivity extends AppCompatActivity {
 
         btnDivisible.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, DivisibleChecker.class);
+            startActivity(intent);
+        });
+
+        btnRandomColor.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, GenerateRandomColor.class);
+            startActivity(intent);
+        });
+
+        btnNewQoute.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, QouteOfTheDay.class);
+            startActivity(intent);
+        });
+
+        btnImageCarousel.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ImageCarousel.class);
+            startActivity(intent);
+        });
+
+        btnStopwatch.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, Stopwatch.class);
+            startActivity(intent);
+        });
+
+        btnPasswordChecker.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PasswordStrengthChecker.class);
+            startActivity(intent);
+        });
+
+        btnQuizGame.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, QuizGame.class);
+            startActivity(intent);
+        });
+
+        btnTimer.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, Timer.class);
+            startActivity(intent);
+        });
+
+        btnColorPicker.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ColorPicker.class);
+            startActivity(intent);
+        });
+
+        btnWeatherWidget.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, WeatherWidget.class);
+            startActivity(intent);
+        });
+
+        btnMoodTracker.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MoodTracker.class);
             startActivity(intent);
         });
     }
